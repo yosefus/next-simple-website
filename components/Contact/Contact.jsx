@@ -9,6 +9,7 @@ export default function Contact() {
   const submitFormFn = (e) => {
     e.preventDefault();
     setThanksNote(true);
+
     e.target.reset();
   };
 
