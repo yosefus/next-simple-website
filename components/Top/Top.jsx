@@ -23,6 +23,7 @@ export default function Top() {
           data-aos-duration="600"
           className={styles.one}
         ></div>
+
         <div
           data-aos="fade-left"
           data-aos-offset="200"
@@ -30,6 +31,7 @@ export default function Top() {
           data-aos-duration="600"
           className={styles.two}
         ></div>
+
         <div
           data-aos="fade-right"
           data-aos-offset="400"
