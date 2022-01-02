@@ -1,0 +1,25 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem 1rem;
+}
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7e7e7;
+  max-width: 100%;
+  width: 100vw;
+  overflow: hidden;
+  min-height: 40vh;
+}
+.section h3 {
+  font-size: 4rem;
+  font-weight: 200;
+}

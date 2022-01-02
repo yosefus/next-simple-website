@@ -1,0 +1,55 @@
+@import '../../styles/global.less';
+
+.about {
+  .flex-center;
+  position: relative;
+
+  .img,
+  .text {
+    flex-basis: 50%;
+  }
+
+  .text {
+    padding: 3rem;
+
+    h4 {
+      margin: 0 0 2rem 0;
+      font-size: 3rem;
+      font-weight: 300;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  .img {
+    height: 80vh;
+    width: 100%;
+    background: url('/images/about.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .flex-center;
+
+    span {
+      width: 90%;
+      height: 90%;
+      border: 1px solid #fff;
+      border-radius: 20px;
+    }
+  }
+
+  .img2 {
+    .img;
+    background: url('/images/about2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about {
+    display: block;
+  }
+}

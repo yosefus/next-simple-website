@@ -1,0 +1,82 @@
+@import '../../styles/global.less';
+
+.contact {
+  padding: 3rem;
+
+  div {
+    margin: 0 auto;
+    width: 50%;
+    z-index: 100;
+    padding: 1rem;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  form:extend(.flex-center) {
+    padding: 1rem 0;
+    gap: 1rem;
+    flex-direction: column;
+
+    input,
+    textarea {
+      border: hidden;
+      width: 90%;
+      line-height: 2.3rem;
+      font-size: 1.4rem;
+      padding: 0.4rem 0.7rem;
+      background: rgba(0, 0, 0, 0.062);
+      border-radius: 10px;
+    }
+
+    button:extend(.btn) {
+      border-radius: 50%;
+      padding: 1rem;
+      .flex-center;
+      font-size: 2rem;
+      color: #fff;
+      background: @primary-pl;
+    }
+  }
+
+  .msg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    background: @primary-pl;
+    .flex-center;
+    cursor: pointer;
+
+    div {
+      .flex-center;
+      background: @background-color;
+      width: 600px;
+      max-width: 100vw;
+      height: 400px;
+      position: relative;
+
+      svg {
+        color: @secondary-pl;
+        font-size: 3rem;
+        position: absolute;
+        top: 2rem;
+        right: 50%;
+        transform: translateX(50%);
+      }
+
+      h3 {
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact {
+    div {
+      width: 100%;
+    }
+  }
+}

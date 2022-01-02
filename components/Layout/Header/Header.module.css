@@ -1,0 +1,38 @@
+.flex-center,
+.header,
+.header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem 1rem;
+}
+.header {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100vw;
+  height: 3rem;
+  z-index: 100;
+}
+.header ul {
+  list-style: none;
+  gap: 1.4rem;
+}
+.header ul a {
+  color: #fff;
+  font-weight: 400;
+}
+@media screen and (max-width: 600px) {
+  .header ul {
+    gap: 1rem;
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,88 @@
+.flex-center,
+.contact form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn,
+.contact form button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem 1rem;
+}
+.contact {
+  padding: 3rem;
+}
+.contact div {
+  margin: 0 auto;
+  width: 50%;
+  z-index: 100;
+  padding: 1rem;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+.contact form {
+  padding: 1rem 0;
+  gap: 1rem;
+  flex-direction: column;
+}
+.contact form input,
+.contact form textarea {
+  border: hidden;
+  width: 90%;
+  line-height: 2.3rem;
+  font-size: 1.4rem;
+  padding: 0.4rem 0.7rem;
+  background: rgba(0, 0, 0, 0.062);
+  border-radius: 10px;
+}
+.contact form button {
+  border-radius: 50%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #fff;
+  background: hsl(215, 50%, 23%);
+}
+.contact .msg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  background: hsl(215, 50%, 23%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.contact .msg div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 600px;
+  max-width: 100vw;
+  height: 400px;
+  position: relative;
+}
+.contact .msg div svg {
+  color: #e63946;
+  font-size: 3rem;
+  position: absolute;
+  top: 2rem;
+  right: 50%;
+  transform: translateX(50%);
+}
+.contact .msg div h3 {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+}
+@media screen and (max-width: 900px) {
+  .contact div {
+    width: 100%;
+  }
+}

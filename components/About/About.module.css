@@ -1,0 +1,73 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.4rem 1rem;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.about .img,
+.about .text {
+  flex-basis: 50%;
+}
+.about .text {
+  padding: 3rem;
+}
+.about .text h4 {
+  margin: 0 0 2rem 0;
+  font-size: 3rem;
+  font-weight: 300;
+}
+.about .text p {
+  font-size: 1.2rem;
+}
+.about .img {
+  height: 80vh;
+  width: 100%;
+  background: url('/images/about.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .img span {
+  width: 90%;
+  height: 90%;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+.about .img2 {
+  flex-basis: 50%;
+  height: 80vh;
+  width: 100%;
+  background: url('/images/about.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('/images/about2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about .img2 span {
+  width: 90%;
+  height: 90%;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+@media screen and (max-width: 700px) {
+  .about {
+    display: block;
+  }
+}
